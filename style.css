@@ -1,127 +1,145 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: monospace;
 }
 
-body{
-	background-image:url(images/1187673.jpg);
+body {
+	background-image: url(images/1187673.jpg);
 	background-color: rgba(0, 0, 0, 0.6);
-	background-blend-mode:multiply;
-        background-size: cover;
+	background-blend-mode: multiply;
+	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
 
-.container{
-	width: 95%; /*largura do container*/
-	margin: 0 auto; /*espaçamento externo*/
+.container {
+	width: 95%;
+	/*largura do container*/
+	margin: 0 auto;
+	/*espaçamento externo*/
 }
 
-.header{
-        padding: 30px 0; /*espaçamento interno*/
+.header {
+	padding: 30px 0;
+	/*espaçamento interno*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.header-nav{
+.header-nav {
 	display: flex;
-	list-style: none; /*para tirar os pontos pretos dos links*/
-        gap: 60px;
+	list-style: none;
+	/*para tirar os pontos pretos dos links*/
+	gap: 60px;
 	font-size: 15px;
 	box-shadow: 1px 2px 20px;
 	border-radius: 8px;
 	color: black;
 }
 
-.header-nav li a:hover{
-        border-style:ridge;
+.header-nav li a:hover {
+	border-style: ridge;
 	background-color: #bb24cf00;
 	border-radius: 8px;
 }
 
-.header-nav li a{
+.header-nav li a {
 	text-decoration: none;
 	color: #ffffff;
 	transition: 0.2s all;
 }
 
-main{
-	margin-top: 150px; /*espacamento de cima para baixo*/
+.logo img{
+    background-color: #ffffff;
+	padding-right: 2px;
+	border-radius: 4px;
+
+}
+.logo img:hover{
+    background-color: #840ec9;	
+	transition: 0.4s all;
 }
 
-main h1{
-	color: #fff /*cor do texto principal*/
+
+main {
+	margin-top: 150px;
+	/*espacamento de cima para baixo*/
 }
 
-.main{
-	display: flex; /*deixar os inputs ao lado do texto h1*/
+main h1 {
+	color: #fff
+		/*cor do texto principal*/
+}
+
+.main {
+	display: flex;
+	/*deixar os inputs ao lado do texto h1*/
 	align-items: flex-start;
 	justify-content: space-between;
 }
 
-.textos{
+.textos {
 	max-width: 700px;
 	font-size: large;
 }
 
-span{
+span {
 	color: rgb(53, 114, 245);
 }
 
-p{
-	color:#fff;
+p {
+	color: #fff;
 }
 
-.nome{
-    max-width: 130px;
-    margin: 0 auto;
-    height: 1px;
+.nome {
+	max-width: 130px;
+	margin: 0 auto;
+	height: 1px;
 }
 
 form h1,
-form{
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: center;
-  flex: 1px;
+form {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1px;
 }
 
-input{
+input {
 	margin-top: 1px;
 	height: 20px;
 	padding: 10px;
 	border-radius: 10px;
-	border:inset;
+	border: inset;
 	background-color: #00000000;
-	background-blend-mode:color-burn;
+	background-blend-mode: color-burn;
 }
 
-form [type="submit"]{
+form [type="submit"] {
 	color: #000000;
 	height: 30px;
 	width: 70%;
-	border:none;
+	border: none;
 	border-radius: 10px;
-	background-color: rgb(132, 14, 201);
+	background-color: #840ec9;
 	box-shadow: 11px 11px 11px black;
 }
 
-form [type="submit"]:hover{
+form [type="submit"]:hover {
 	cursor: pointer;
-	background-color: rgb(117, 10, 170);
+	background-color: #750aaa;
 	box-shadow: 11px 11px 11px;
 	transition: 0.3s all;
 }
 
-form [type="text"]{
+form [type="text"] {
 	height: 30px;
 	width: 170%;
 	font-weight: bold;
 	border-radius: 10px;
 }
-
